@@ -51,11 +51,11 @@ echo pdftek実行
 PAUSE
 
 @echo on
-pdftk "%importedPdf%" update_info_utf8 %bookMarkFileName% output %outputName%
+pdftk %importedPdf% update_info_utf8 %bookMarkFileName% output %outputName%
 @echo off
 
 @echo.
-echo 完了ファイル保存先: %scriptDir%%outputName%
+echo 完了
 @echo.
 
 PAUSE

@@ -25,7 +25,7 @@ rem エクスポートtxtの名前を定義
     rem 先頭に付ける文字列
     set mod=bookmarks-
 
-    set outputName=%mod%%nameOrignalPdf%.txt
+    set outputName=%mod%%nameOrignalPdf%-backup.txt
 
 rem pdftek実行
 @echo.
@@ -34,11 +34,11 @@ echo pdftek実行
 PAUSE
 
 @echo on
-pdftk "%orignalPdf%" dump_data_utf8 output "%outputName%"
+pdftk %orignalPdf% dump_data_utf8 output "%outputName%"
 @echo off
 
 @echo.
-echo ファイル保存先: %scriptDir%%outputName%
+echo 完了
 @echo.
 
 PAUSE
