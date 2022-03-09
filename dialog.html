@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <script type='text/javascript'>
+      function handleDownload() {
+        var content = <?= getBookmarks(); ?>;
+        var blob = new Blob([ content ], { "type" : "text/plain"});
+        document.getElementById("download").href = window.URL.createObjectURL(blob);
+      }
+  </script>
+  </head>
+  <body>
+    <a id="download" href="#" download="bookmark.txt" onclick="handleDownload()">ダウンロード</a>
+  </body>
+</html>
