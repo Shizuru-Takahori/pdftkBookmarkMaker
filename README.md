@@ -1,2 +1,2 @@
-# pdftekBookmarkMaker
-pdftekでのpdfしおり作成支援ツール
+# PDFtkBookmarkMaker
+PDFtkでのpdfしおり作成支援ツール
